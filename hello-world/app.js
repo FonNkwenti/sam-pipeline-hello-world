@@ -49,6 +49,7 @@ exports.lambdaHandler = async (event, context) => {
       body: JSON.stringify({
         message: "hello world SAM sync👋🏽 with SAM Pipeline for GitHub Actions",
         count: list_response.Items.length,
+        list_response,
         // location: ret.data.trim()
       }),
     };
